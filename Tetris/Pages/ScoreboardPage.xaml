@@ -1,0 +1,34 @@
+﻿<Page Name="_ScoreboardPage"
+      x:Class="Tetris.Pages.ScoreboardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d">
+    <Page.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </Page.Resources>
+    <Grid Margin="0,15,0,30" HorizontalAlignment="Center">
+        <ScrollViewer PanningMode="Both" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+            <DataGrid Name="Scoreboard" ItemsSource="{Binding ElementName=_ScoreboardPage, Path=ScoreboardData.Records}" HeadersVisibility="Column" AutoGenerateColumns="False" CanUserReorderColumns="False" CanUserResizeColumns="False" RowBackground="Transparent">
+                <DataGrid.Resources>
+                    <SolidColorBrush x:Key="DataGridColumnHeaderBackgroundBrush" Color="Transparent"/>
+                    <SolidColorBrush x:Key="DataGridColumnHeaderForegroundBrush" Color="White"/>
+                </DataGrid.Resources>
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow" BasedOn="{StaticResource {x:Type DataGridRow}}">
+                        <Setter Property="IsEnabled" Value="False"/>
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Score" Binding="{Binding Score}" SortDirection="Descending"/>
+                    <DataGridTextColumn Header="Lines" Binding="{Binding LineCount}"/>
+                    <DataGridTextColumn Header="Level" Binding="{Binding Level}"/>
+                    <DataGridTextColumn Header="Time" Binding="{Binding Time}"/>
+                    <DataGridTextColumn Header="Date created" Binding="{Binding DateCreated}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+        <TextBlock Visibility="{Binding ElementName=Scoreboard, Path=Items.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}" Margin="0,40,0,0" HorizontalAlignment="Center">No records</TextBlock>
+    </Grid>
+</Page>

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris", "Tetris\Tetris.csproj", "{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "InputUtils", "InputUtils\InputUtils.shproj", "{BD095152-5FDF-4B2E-A238-081035A99CEC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Data", "Data\Data.shproj", "{FC009A56-7B91-40AC-8748-C329C50909C3}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		InputUtils\InputUtils.projitems*{bd095152-5fdf-4b2e-a238-081035a99cec}*SharedItemsImports = 13
+		Data\Data.projitems*{ddd4efb7-e850-423e-be6e-19efd1bd4c14}*SharedItemsImports = 4
+		InputUtils\InputUtils.projitems*{ddd4efb7-e850-423e-be6e-19efd1bd4c14}*SharedItemsImports = 4
+		Data\Data.projitems*{fc009a56-7b91-40ac-8748-c329c50909c3}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Debug|ARM.Build.0 = Debug|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Debug|x64.Build.0 = Debug|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Debug|x86.Build.0 = Debug|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Release|ARM.ActiveCfg = Release|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Release|ARM.Build.0 = Release|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Release|ARM64.Build.0 = Release|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Release|x64.ActiveCfg = Release|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Release|x64.Build.0 = Release|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Release|x86.ActiveCfg = Release|Any CPU
+		{DDD4EFB7-E850-423E-BE6E-19EFD1BD4C14}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDB6198C-CA8C-4FE6-B858-673085104273}
+	EndGlobalSection
+EndGlobal
