@@ -7,9 +7,9 @@ namespace Tetris.Data
 {
     class GameViewModelEx : GameViewModel
     {
-        public IEnumerable Difficulties { get => new string[] { "Easy", "Normal", "Hard" }; }
+        public static IEnumerable Difficulties => new string[] { "EASY", "NORMAL", "HARD" };
 
-        public IEnumerable Levels { get => Enumerable.Range(1, Manager.MaxLevel).Select(x => x.ToString()); }
+        public static IEnumerable Levels => Enumerable.Range(1, Manager.MaxLevel).Select(x => x.ToString());
 
         private bool isGamepadActive;
         public bool IsGamepadActive
@@ -22,9 +22,9 @@ namespace Tetris.Data
             }
         }
 
-        public bool IsDifficultyChangable { get => State == State.NotStarted || State == State.Over; }
+        public bool IsDifficultyChangable => State == State.NotStarted || State == State.Over;
 
-        public bool IsStateTextVisible { get => State == State.Over; }
+        public bool IsStateTextVisible => State == State.Over;
 
         public override State State
         {
